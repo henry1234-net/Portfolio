@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Henry's Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo copy.png">
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="gallery.html">Gallery</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="title gallery">
+			<h1 style="font-size: 70px;">Henry's Gallery</h1>
+			<p style="font-size: 20px; font-weight: 600; color: #c5c4c4;">Scroll Down</p>
+			<span class="span"></span><br>
+			<span class="span"></span>
+		</div>
+	</header>
+
+	<div class="image-grid">
+		<img src="gallery/anto2.jpg"/>
+		<img src="gallery/birthday photobook cover.jpg" class="h"/>
+		<img src="gallery/bokta.jpg"/>
+		<img src="gallery/CampusConnectBack.jpg"/>
+		<img src="gallery/CampusConnectBackNoir.jpg"/>
+		<img src="gallery/StudentConnectWhite2.jpg"/>
+		<img src="gallery/StudentConnectNoir.jpg"/>
+		<img src="gallery/kBusinessCardProto2.jpg" class="h"/>
+		<img src="gallery/kBusinessCardProto2Back.jpg" class="h"/>
+		<img src="gallery/KbACK_pink.jpg"/>
+		<img src="gallery/KENNY.jpg" class="h"/>
+		<img src="gallery/newFlyer3.jpg"/>
+		<img src="gallery/postClean.jpg" class="h"/>
+		<img src="gallery/postCleanBack.jpg" class="h"/>
+		<img src="gallery/postCleanFlyer.jpg"/>
+		<img src="gallery/TAIWO.jpg" class="h"/>
+		<img src="gallery/TAIWO4.jpg"/>
+		<img src="gallery/vuna comp.jpg" class="h"/>
+		<img src="gallery/VUNAJAMB.jpg" />
+	</div>
+
+	<div class="popup-image">
+		<span>&times;</span>
+		<img src="gallery/anto2.jpg"/>
+	</div>
+
+	<script>
+		document.querySelectorAll('.image-grid img').forEach(image =>{
+			image.onclick = () =>{
+				document.querySelector('.popup-image').style.display = 'block';
+				document.querySelector('.popup-image img').src = image.getAttribute('src');
+    		}
+		});
+		document.querySelector('.popup-image span').onclick = () =>{
+			document.querySelector('.popup-image').style.display = 'none';
+		}
+	</script>
+</body>
+</html>
