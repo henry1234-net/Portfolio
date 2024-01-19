@@ -139,7 +139,7 @@ ul li.active a{
 	border: 5px solid #fff;
 	border-radius: 5px;
 	width: auto;
-	height: auto;
+	height: 80vh;
 }
 .span{
 	position: fixed;
@@ -188,11 +188,11 @@ ul li.active a{
 	}
 	.title h1{
 		color:#fff;
-		font-size:18px;
+		font-size:30px;
 		text-align:center;
 	}
 	.button a{
-		font-size: 18px;
+		font-size: 30px;
 	}
 }
 
