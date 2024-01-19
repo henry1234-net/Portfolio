@@ -139,7 +139,7 @@ ul li.active a{
 	border: 5px solid #fff;
 	border-radius: 5px;
 	width: auto;
-	height: 80vh;
+	height: auto;
 }
 .span{
 	position: fixed;
