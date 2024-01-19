@@ -88,7 +88,7 @@ ul li.active a{
 	position: relative;
 	padding: 10px;
 	overflow: hidden;
-	object-fit: contain;
+	object-fit: cover;
 }
 .image-grid img{
 	width: 250px;
@@ -130,7 +130,7 @@ ul li.active a{
 	color: #fff;
 	cursor: pointer;
 	z-index: 100;
-	object-fit: contain;
+	object-fit: cover;
 }
 .popup-image img {
 	position: absolute;
@@ -138,8 +138,8 @@ ul li.active a{
 	transform: translate(-50%, -50%);
 	border: 5px solid #fff;
 	border-radius: 5px;
-	width: auto;
-	height: 100vh;
+	width: 60vw;
+	height: 80vh;
 }
 .span{
 	position: fixed;
